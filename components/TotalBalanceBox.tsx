@@ -34,16 +34,19 @@ const TotalBalanceBox = ({
       {/* Fixed hydration-safe structure */}
       <div className="text-sm text-gray-700">
         <span className="font-semibold">Total Current Balance: </span>
-        <AnimatedCounter />
-        <CountUp 
-          end={totalCurrentBalance} 
-          duration={2} 
-          separator="," 
-          decimals={2} 
-          prefix="₹" 
-          decimal="." 
+        <AnimatedCounter amount={0} />
+        <CountUp
+          end={totalCurrentBalance}
+          duration={2}
+          separator=","
+          decimals={2}
+          prefix="₹"
+          decimal="."
         />
       </div>
+      
+
+
     </div>
   );
 };
